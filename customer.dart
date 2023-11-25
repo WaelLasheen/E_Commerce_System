@@ -7,8 +7,8 @@ class Customer extends User {
 
   Customer(String id, String name, String email, String adress) : super(id, name, email, adress);
 
-  void addToCart(Product product) {
-    cart.addItem(product);
+  void addToCart(Product product, int count) {
+    cart.addItem(product,count);
   }
 
   void viewCart() {

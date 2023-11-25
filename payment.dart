@@ -1,6 +1,5 @@
 import 'cart.dart';
 import 'customer.dart';
-import 'product.dart';
 
 class Payment {
   String id;

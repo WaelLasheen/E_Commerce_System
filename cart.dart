@@ -3,8 +3,11 @@ import 'product.dart';
 class ShoppingCart {
   List<Product> products = [];
 
-  void addItem(Product product) {
-    products.add(product);
+  void addItem(Product product, int count) {
+    while(count > 0){
+      products.add(product);
+      count --;
+    }
   }
 
   void showCart() {
